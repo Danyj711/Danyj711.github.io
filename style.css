@@ -1,0 +1,88 @@
+
+
+ol, ul {
+  list-style: none;
+}
+
+a img {
+  border: none;
+
+}
+body {
+  color: yellow;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  background: rgb(44, 34, 82);
+}
+h1 {
+  font-size: 2.25em;
+  padding: 0 1em;
+  font-style: italic;
+}
+a {
+  text-decoration: none;
+}
+img {
+  max-width: 50%;
+  height: auto;
+}
+
+.avatar {
+  box-shadow: 0 0 0px 3px #fff, 0 0 0 4px #ccc, 0 4px 6px #333;
+  border-radius: 20px;
+  width: 280px;
+  height: 280px;
+}
+
+.loadanimation {
+  animation: 2s ease-in-out both fadeInRight;
+}
+
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(300px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+  }
+}
+
+.social li {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  margin: 1em;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.social li:hover {
+  transform: scale(2, 2);
+  color: yellow;
+}
+
+.social li:before {
+  position: absolute;
+  width: 2em;
+  margin-left: -1em;
+  top: 1.5em;
+  left: 50%;
+}
+
+.social li a {
+  display: block;
+  color: inherit;
+  padding: 1em 1em 1em;
+  width: 6em;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
